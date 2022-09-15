@@ -1,7 +1,7 @@
 package adapters
 
 import (
-	"go-pocketbase/pkg/adapters-log"
+	"github.com/edson-dev/adapters-log"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
