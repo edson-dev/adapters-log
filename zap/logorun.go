@@ -15,6 +15,8 @@ type Log struct {
 	level    zap.AtomicLevel
 }
 
+var singleton adapters.Log
+
 var once sync.Once
 
 func (z Log) New() adapters.Log {
@@ -27,8 +29,9 @@ func (z Log) New() adapters.Log {
 		))
 		z.SetLevel("")
 		defer z.instance.Sync()
+		singleton = z
 	})
-	return z
+	return singleton
 }
 
 func (z Log) SetLevel(level string) {
