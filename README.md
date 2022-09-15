@@ -1,6 +1,6 @@
 this is an experimental project to implement the adapter pattern in go for log libs. The interface is simplified to just use standard methods presented in the logging libraries
 
-setting the structure type according to the interface type, forces the New method to return the Log type, and the structure must implement all the implemented methods
+setting the structure type according to the interface type, forces the New method to return the Log type, and the structure must implement all the listed methods of the interface
 
 ````
 import "github.com/edson-dev/adapters-log/zap"
