@@ -62,3 +62,15 @@ func (z Log) Throw(err error) {
 func (z Log) Debug(message string) {
 	z.instance.Debug(message)
 }
+func (z Log) Info(message string) {
+	z.instance.Info(message)
+}
+func (z Log) Warn(message string) {
+	z.instance.Warn(message)
+}
+func (z Log) Error(message string) {
+	z.instance.Error(message)
+}
+func (z Log) Fatal(message string) {
+	z.instance.Fatal(message)
+}

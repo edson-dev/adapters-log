@@ -33,3 +33,15 @@ func (l Log) Throw(err error) {
 func (l Log) Debug(message string) {
 	l.instance.Print(message)
 }
+func (l Log) Info(message string) {
+	l.instance.Print(message)
+}
+func (l Log) Warn(message string) {
+	l.instance.Print(message)
+}
+func (l Log) Error(message string) {
+	l.instance.Print(message)
+}
+func (l Log) Fatal(message string) {
+	l.instance.Print(message)
+}
