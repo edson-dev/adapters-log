@@ -56,7 +56,7 @@ func (z Log) Throw(err error) {
 		z.instance.Error(err.Error(),
 			zap.String("file", fileStructure[len(fileStructure)-1]),
 			zap.Int("line", line),
-			zap.String("type", "relevant"))
+			zap.String("type", "relevante"))
 	}
 }
 func (z Log) Debug(message string) {
